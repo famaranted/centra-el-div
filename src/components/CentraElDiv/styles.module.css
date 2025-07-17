@@ -1,0 +1,123 @@
+.desafioContainer {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.gameInfo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 200;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.verifyButton {
+  background: #ff4136;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.verifyButton:hover {
+  background: #e82c20;
+}
+
+.verifyButton:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.startButton {
+  background: #3936ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.startButton:hover {
+  background: #e82c20;
+}
+
+.startButton:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.contenedorPrincipal {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.marcoDecorativo {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 20px;
+  transform: rotate(0.5deg);
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.contenedorIntermedio {
+  display: inline-block;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+}
+
+.contenedorEngañoso {
+  padding-top: 56.25%;
+  position: relative;
+  background: #f5f5f5;
+  border: 1px dashed #ccc;
+}
+
+.target {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: #ff4136;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+  top: 25%;
+  left: 30%;
+  margin: 0 auto;
+  float: left;
+}
+
+.successOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 128, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  z-index: 1000;
+}
